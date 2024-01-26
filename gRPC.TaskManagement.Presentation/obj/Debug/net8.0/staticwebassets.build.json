@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "XKLjrFBLbCdWUwd/wc4QB3YUnl2P4iIjKxg729t1O1k=",
+  "Source": "gRPC.TaskManagement.Presentation",
+  "BasePath": "_content/gRPC.TaskManagement.Presentation",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

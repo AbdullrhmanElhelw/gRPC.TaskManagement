@@ -1,0 +1,15 @@
+C:\Users\Eng Cocu\source\repos\gRPC.TaskManagement\gRPC.TaskManagement.BL\obj\Debug\net8.0\gRPC.TaskManagement.BL.csproj.AssemblyReference.cache
+C:\Users\Eng Cocu\source\repos\gRPC.TaskManagement\gRPC.TaskManagement.BL\obj\Debug\net8.0\gRPC.TaskManagement.BL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Eng Cocu\source\repos\gRPC.TaskManagement\gRPC.TaskManagement.BL\obj\Debug\net8.0\gRPC.TaskManagement.BL.AssemblyInfoInputs.cache
+C:\Users\Eng Cocu\source\repos\gRPC.TaskManagement\gRPC.TaskManagement.BL\obj\Debug\net8.0\gRPC.TaskManagement.BL.AssemblyInfo.cs
+C:\Users\Eng Cocu\source\repos\gRPC.TaskManagement\gRPC.TaskManagement.BL\obj\Debug\net8.0\gRPC.TaskManagement.BL.csproj.CoreCompileInputs.cache
+C:\Users\Eng Cocu\source\repos\gRPC.TaskManagement\gRPC.TaskManagement.BL\bin\Debug\net8.0\gRPC.TaskManagement.BL.deps.json
+C:\Users\Eng Cocu\source\repos\gRPC.TaskManagement\gRPC.TaskManagement.BL\bin\Debug\net8.0\gRPC.TaskManagement.BL.dll
+C:\Users\Eng Cocu\source\repos\gRPC.TaskManagement\gRPC.TaskManagement.BL\bin\Debug\net8.0\gRPC.TaskManagement.BL.pdb
+C:\Users\Eng Cocu\source\repos\gRPC.TaskManagement\gRPC.TaskManagement.BL\bin\Debug\net8.0\gRPC.TaskManagement.DAL.dll
+C:\Users\Eng Cocu\source\repos\gRPC.TaskManagement\gRPC.TaskManagement.BL\bin\Debug\net8.0\gRPC.TaskManagement.DAL.pdb
+C:\Users\Eng Cocu\source\repos\gRPC.TaskManagement\gRPC.TaskManagement.BL\obj\Debug\net8.0\gRPC.TaskManagement.BL.csproj.CopyComplete
+C:\Users\Eng Cocu\source\repos\gRPC.TaskManagement\gRPC.TaskManagement.BL\obj\Debug\net8.0\gRPC.TaskManagement.BL.dll
+C:\Users\Eng Cocu\source\repos\gRPC.TaskManagement\gRPC.TaskManagement.BL\obj\Debug\net8.0\refint\gRPC.TaskManagement.BL.dll
+C:\Users\Eng Cocu\source\repos\gRPC.TaskManagement\gRPC.TaskManagement.BL\obj\Debug\net8.0\gRPC.TaskManagement.BL.pdb
+C:\Users\Eng Cocu\source\repos\gRPC.TaskManagement\gRPC.TaskManagement.BL\obj\Debug\net8.0\ref\gRPC.TaskManagement.BL.dll

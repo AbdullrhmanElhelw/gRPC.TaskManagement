@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Protobuf Include="Protos\greet.proto" GrpcServices="Server" />
+		<Protobuf Include="Protos\categoryitem.proto" GrpcServices="Server" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Grpc.AspNetCore" Version="2.57.0" />
+		<PackageReference Include="Grpc.AspNetCore.Server.Reflection" Version="2.60.0" />
+		<PackageReference Include="grpc.tools" Version="2.60.0">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.AspNetCore.Grpc.JsonTranscoding" Version="8.0.1" />
+		<PackageReference Include="Microsoft.entityframeworkcore.design" Version="8.0.1">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\gRPC.TaskManagement.BL\gRPC.TaskManagement.BL.csproj" />
+	</ItemGroup>
+
+</Project>
