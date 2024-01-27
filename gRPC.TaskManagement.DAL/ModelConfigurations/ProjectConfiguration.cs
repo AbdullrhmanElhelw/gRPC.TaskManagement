@@ -14,5 +14,10 @@ internal class ProjectConfiguration : IEntityTypeConfiguration<Project>
 
         builder.Property(x => x.Name)
             .IsRequired();
+
+        builder.HasMany(x => x.Tasks)
+            .WithOne(x => x.Project)
+            .HasForeignKey(x => x.ProjectId)
+            .HasConstraintName("Fk_Project_Tasks");
     }
 }

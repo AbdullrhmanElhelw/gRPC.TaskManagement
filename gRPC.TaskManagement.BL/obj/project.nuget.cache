@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ktp1+pv5mNT3Ja+3HVw9CUNkBAgoSDp+fwSGH8Owr8AO/DIRk0boULdE9LhmLNoceffmVYg9c6/wIbLyQhA1xQ==",
+  "dgSpecHash": "bzHx+gEFGxTb5omqR9RAb77HPONdb1QNKtzQv1U7qNVf88LJbHFpLOqcokoyoYRl++ELJomLOZ/xsAFgWSaNkw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Eng Cocu\\source\\repos\\gRPC.TaskManagement\\gRPC.TaskManagement.BL\\gRPC.TaskManagement.BL.csproj",
+  "projectFilePath": "C:\\Users\\Eng Cocu\\Desktop\\New folder\\gRPC.TaskManagement\\gRPC.TaskManagement.BL\\gRPC.TaskManagement.BL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Eng Cocu\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Eng Cocu\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

@@ -1,0 +1,68 @@
+syntax = "proto3";
+
+option csharp_namespace = "gRPC.TaskManagement.Presentation";
+
+import "google/protobuf/timestamp.proto";
+
+service ProjectItemService{
+    rpc CreateProject(CreateProjectRequest) returns (CreateProjectResponse);
+    rpc GetProject(GetProjectRequest) returns (GetProjectResponse);
+    rpc GetallProjects(GetallProjectsRequest) returns(stream GetProjectResponse);
+    rpc UpdateProject(UpdateProjectRequest) returns (UpdateProjectResponse);
+    rpc DeleteProject(DeleteProjectRequest) returns (DeleteProjectResponse);
+}
+
+message CreateProjectRequest{
+ 
+    string name = 1;
+    string description = 2;
+    google.protobuf.Timestamp start_date = 3;
+    google.protobuf.Timestamp end_date = 4;
+}
+
+message CreateProjectResponse{
+    int32 status =1;
+}
+
+message GetProjectRequest{
+    int32 id =1;
+}
+
+
+message GetProjectResponse{
+    int32 id =1;
+    string name = 2;
+    string description = 3;
+    google.protobuf.Timestamp start_date = 4;
+    google.protobuf.Timestamp end_date = 5;
+}
+
+
+message GetallProjectsRequest{
+
+}
+
+message UpdateProjectRequest{
+    int32 id =1;
+    string name = 2;
+    string description = 3;
+    google.protobuf.Timestamp start_date = 4;
+    google.protobuf.Timestamp end_date = 5;
+}
+
+message UpdateProjectResponse{
+    string name = 2;
+    string description = 3;
+    google.protobuf.Timestamp start_date = 4;
+    google.protobuf.Timestamp end_date = 5;
+}
+
+message DeleteProjectRequest{
+    int32 id =1;
+}
+
+message DeleteProjectResponse{
+    int32 status = 1;
+}
+
+

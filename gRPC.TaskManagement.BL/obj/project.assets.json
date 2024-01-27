@@ -2684,11 +2684,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Eng Cocu\\source\\repos\\gRPC.TaskManagement\\gRPC.TaskManagement.BL\\gRPC.TaskManagement.BL.csproj",
+      "projectUniqueName": "C:\\Users\\Eng Cocu\\Desktop\\New folder\\gRPC.TaskManagement\\gRPC.TaskManagement.BL\\gRPC.TaskManagement.BL.csproj",
       "projectName": "gRPC.TaskManagement.BL",
-      "projectPath": "C:\\Users\\Eng Cocu\\source\\repos\\gRPC.TaskManagement\\gRPC.TaskManagement.BL\\gRPC.TaskManagement.BL.csproj",
+      "projectPath": "C:\\Users\\Eng Cocu\\Desktop\\New folder\\gRPC.TaskManagement\\gRPC.TaskManagement.BL\\gRPC.TaskManagement.BL.csproj",
       "packagesPath": "C:\\Users\\Eng Cocu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Eng Cocu\\source\\repos\\gRPC.TaskManagement\\gRPC.TaskManagement.BL\\obj\\",
+      "outputPath": "C:\\Users\\Eng Cocu\\Desktop\\New folder\\gRPC.TaskManagement\\gRPC.TaskManagement.BL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Eng Cocu\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2705,8 +2705,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Eng Cocu\\source\\repos\\gRPC.TaskManagement\\gRPC.TaskManagement.DAL\\gRPC.TaskManagement.DAL.csproj": {
-              "projectPath": "C:\\Users\\Eng Cocu\\source\\repos\\gRPC.TaskManagement\\gRPC.TaskManagement.DAL\\gRPC.TaskManagement.DAL.csproj"
+            "C:\\Users\\Eng Cocu\\Desktop\\New folder\\gRPC.TaskManagement\\gRPC.TaskManagement.DAL\\gRPC.TaskManagement.DAL.csproj": {
+              "projectPath": "C:\\Users\\Eng Cocu\\Desktop\\New folder\\gRPC.TaskManagement\\gRPC.TaskManagement.DAL\\gRPC.TaskManagement.DAL.csproj"
             }
           }
         }

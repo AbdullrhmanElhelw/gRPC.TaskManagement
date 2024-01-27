@@ -20,5 +20,10 @@ internal class TaskItemConfiguration : IEntityTypeConfiguration<TaskItem>
         builder.Property(x => x.Description)
             .HasMaxLength(250)
             .IsRequired(false);
+
+        builder.HasMany(x => x.Comments)
+            .WithOne(c => c.TaskItem)
+            .HasForeignKey(c => c.TaskItemId)
+            .HasConstraintName("Fk_Task_Commnets");
     }
 }

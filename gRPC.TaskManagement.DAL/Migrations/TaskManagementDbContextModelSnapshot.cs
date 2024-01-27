@@ -8,154 +8,216 @@ using gRPC.TaskManagement.DAL.Context;
 
 #nullable disable
 
-namespace gRPC.TaskManagement.DAL.Migrations
+namespace gRPC.TaskManagement.DAL.Migrations;
+
+[DbContext(typeof(TaskManagementDbContext))]
+partial class TaskManagementDbContextModelSnapshot : ModelSnapshot
 {
-    [DbContext(typeof(TaskManagementDbContext))]
-    partial class TaskManagementDbContextModelSnapshot : ModelSnapshot
+    protected override void BuildModel(ModelBuilder modelBuilder)
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
-        {
 #pragma warning disable 612, 618
-            modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.1")
-                .HasAnnotation("Relational:MaxIdentifierLength", 128);
+        modelBuilder
+            .HasAnnotation("ProductVersion", "8.0.1")
+            .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
-            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+        SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("gRPC.TaskManagement.DAL.Models.Category", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+        modelBuilder.Entity("gRPC.TaskManagement.DAL.Models.Category", b =>
+            {
+                b.Property<int>("Id")
+                    .ValueGeneratedOnAdd()
+                    .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("Color")
-                        .HasColumnType("int");
+                b.Property<int>("Color")
+                    .HasColumnType("int");
 
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime2");
+                b.Property<DateTime>("CreatedAt")
+                    .HasColumnType("datetime2");
 
-                    b.Property<string>("Description")
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
+                b.Property<string>("Description")
+                    .HasMaxLength(255)
+                    .HasColumnType("nvarchar(255)");
 
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
+                b.Property<bool>("IsDeleted")
+                    .HasColumnType("bit");
 
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                b.Property<string>("Name")
+                    .IsRequired()
+                    .HasMaxLength(50)
+                    .HasColumnType("nvarchar(50)");
 
-                    b.Property<DateTime>("UpdatedAt")
-                        .HasColumnType("datetime2");
+                b.Property<DateTime>("UpdatedAt")
+                    .HasColumnType("datetime2");
 
-                    b.HasKey("Id");
+                b.HasKey("Id");
 
-                    b.ToTable("Categories", (string)null);
-                });
+                b.ToTable("Categories", (string)null);
+            });
 
-            modelBuilder.Entity("gRPC.TaskManagement.DAL.Models.Comment", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+        modelBuilder.Entity("gRPC.TaskManagement.DAL.Models.Comment", b =>
+            {
+                b.Property<int>("Id")
+                    .ValueGeneratedOnAdd()
+                    .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime2");
+                b.Property<DateTime>("CreatedAt")
+                    .HasColumnType("datetime2");
 
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
+                b.Property<bool>("IsDeleted")
+                    .HasColumnType("bit");
 
-                    b.Property<string>("Text")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                b.Property<int>("TaskItemId")
+                    .HasColumnType("int");
 
-                    b.Property<DateTime>("UpdatedAt")
-                        .HasColumnType("datetime2");
+                b.Property<string>("Text")
+                    .IsRequired()
+                    .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+                b.Property<DateTime>("UpdatedAt")
+                    .HasColumnType("datetime2");
 
-                    b.ToTable("Comments", (string)null);
-                });
+                b.HasKey("Id");
 
-            modelBuilder.Entity("gRPC.TaskManagement.DAL.Models.Project", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                b.HasIndex("TaskItemId");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                b.ToTable("Comments", (string)null);
+            });
 
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime2");
+        modelBuilder.Entity("gRPC.TaskManagement.DAL.Models.Project", b =>
+            {
+                b.Property<int>("Id")
+                    .ValueGeneratedOnAdd()
+                    .HasColumnType("int");
 
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<DateTime>("EndDate")
-                        .HasColumnType("datetime2");
+                b.Property<DateTime>("CreatedAt")
+                    .HasColumnType("datetime2");
 
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
+                b.Property<string>("Description")
+                    .IsRequired()
+                    .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                b.Property<DateTime>("EndDate")
+                    .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("StartDate")
-                        .HasColumnType("datetime2");
+                b.Property<bool>("IsDeleted")
+                    .HasColumnType("bit");
 
-                    b.Property<DateTime>("UpdatedAt")
-                        .HasColumnType("datetime2");
+                b.Property<string>("Name")
+                    .IsRequired()
+                    .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+                b.Property<DateTime>("StartDate")
+                    .HasColumnType("datetime2");
 
-                    b.ToTable("Projects", (string)null);
-                });
+                b.Property<DateTime>("UpdatedAt")
+                    .HasColumnType("datetime2");
 
-            modelBuilder.Entity("gRPC.TaskManagement.DAL.Models.TaskItem", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                b.HasKey("Id");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                b.ToTable("Projects", (string)null);
+            });
 
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime2");
+        modelBuilder.Entity("gRPC.TaskManagement.DAL.Models.TaskItem", b =>
+            {
+                b.Property<int>("Id")
+                    .ValueGeneratedOnAdd()
+                    .HasColumnType("int");
 
-                    b.Property<string>("Description")
-                        .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
+                b.Property<int>("CategoryId")
+                    .HasColumnType("int");
 
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)")
-                        .HasAnnotation("MinLength", 3);
+                b.Property<DateTime>("CreatedAt")
+                    .HasColumnType("datetime2");
 
-                    b.Property<int>("Priority")
-                        .HasColumnType("int");
+                b.Property<string>("Description")
+                    .HasMaxLength(250)
+                    .HasColumnType("nvarchar(250)");
 
-                    b.Property<int>("Status")
-                        .HasColumnType("int");
+                b.Property<bool>("IsDeleted")
+                    .HasColumnType("bit");
 
-                    b.Property<DateTime>("UpdatedAt")
-                        .HasColumnType("datetime2");
+                b.Property<string>("Name")
+                    .IsRequired()
+                    .HasMaxLength(50)
+                    .HasColumnType("nvarchar(50)")
+                    .HasAnnotation("MinLength", 3);
 
-                    b.HasKey("Id");
+                b.Property<int>("Priority")
+                    .HasColumnType("int");
 
-                    b.ToTable("Tasks", (string)null);
-                });
+                b.Property<int>("ProjectId")
+                    .HasColumnType("int");
+
+                b.Property<int>("Status")
+                    .HasColumnType("int");
+
+                b.Property<DateTime>("UpdatedAt")
+                    .HasColumnType("datetime2");
+
+                b.HasKey("Id");
+
+                b.HasIndex("CategoryId");
+
+                b.HasIndex("ProjectId");
+
+                b.ToTable("Tasks", (string)null);
+            });
+
+        modelBuilder.Entity("gRPC.TaskManagement.DAL.Models.Comment", b =>
+            {
+                b.HasOne("gRPC.TaskManagement.DAL.Models.TaskItem", "TaskItem")
+                    .WithMany("Comments")
+                    .HasForeignKey("TaskItemId")
+                    .OnDelete(DeleteBehavior.Cascade)
+                    .IsRequired()
+                    .HasConstraintName("Fk_Task_Commnets");
+
+                b.Navigation("TaskItem");
+            });
+
+        modelBuilder.Entity("gRPC.TaskManagement.DAL.Models.TaskItem", b =>
+            {
+                b.HasOne("gRPC.TaskManagement.DAL.Models.Category", "Category")
+                    .WithMany("Tasks")
+                    .HasForeignKey("CategoryId")
+                    .OnDelete(DeleteBehavior.Cascade)
+                    .IsRequired()
+                    .HasConstraintName("Fk_Category_Tasks");
+
+                b.HasOne("gRPC.TaskManagement.DAL.Models.Project", "Project")
+                    .WithMany("Tasks")
+                    .HasForeignKey("ProjectId")
+                    .OnDelete(DeleteBehavior.Cascade)
+                    .IsRequired()
+                    .HasConstraintName("Fk_Project_Tasks");
+
+                b.Navigation("Category");
+
+                b.Navigation("Project");
+            });
+
+        modelBuilder.Entity("gRPC.TaskManagement.DAL.Models.Category", b =>
+            {
+                b.Navigation("Tasks");
+            });
+
+        modelBuilder.Entity("gRPC.TaskManagement.DAL.Models.Project", b =>
+            {
+                b.Navigation("Tasks");
+            });
+
+        modelBuilder.Entity("gRPC.TaskManagement.DAL.Models.TaskItem", b =>
+            {
+                b.Navigation("Comments");
+            });
 #pragma warning restore 612, 618
-        }
     }
 }

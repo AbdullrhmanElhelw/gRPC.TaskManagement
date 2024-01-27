@@ -1,0 +1,3 @@
+obj\Debug\net8.0\Protos/Projectitem.cs \
+obj\Debug\net8.0\Protos/ProjectitemGrpc.cs: C:/Users/Eng Cocu/.nuget/packages/grpc.tools/2.60.0/build/native/include/google/protobuf/timestamp.proto\
+ Protos/projectitem.proto

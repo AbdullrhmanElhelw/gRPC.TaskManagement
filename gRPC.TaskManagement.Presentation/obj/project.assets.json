@@ -62,7 +62,7 @@
           }
         }
       },
-      "Google.Protobuf/3.24.0": {
+      "Google.Protobuf/3.25.2": {
         "type": "package",
         "compile": {
           "lib/net5.0/Google.Protobuf.dll": {
@@ -75,12 +75,12 @@
           }
         }
       },
-      "Grpc.AspNetCore/2.57.0": {
+      "Grpc.AspNetCore/2.60.0": {
         "type": "package",
         "dependencies": {
-          "Google.Protobuf": "3.23.1",
-          "Grpc.AspNetCore.Server.ClientFactory": "2.57.0",
-          "Grpc.Tools": "2.57.0"
+          "Google.Protobuf": "3.24.0",
+          "Grpc.AspNetCore.Server.ClientFactory": "2.60.0",
+          "Grpc.Tools": "2.60.0"
         },
         "compile": {
           "lib/net8.0/_._": {}
@@ -108,11 +108,11 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "Grpc.AspNetCore.Server.ClientFactory/2.57.0": {
+      "Grpc.AspNetCore.Server.ClientFactory/2.60.0": {
         "type": "package",
         "dependencies": {
-          "Grpc.AspNetCore.Server": "2.57.0",
-          "Grpc.Net.ClientFactory": "2.57.0"
+          "Grpc.AspNetCore.Server": "2.60.0",
+          "Grpc.Net.ClientFactory": "2.60.0"
         },
         "compile": {
           "lib/net8.0/Grpc.AspNetCore.Server.ClientFactory.dll": {
@@ -162,10 +162,10 @@
           }
         }
       },
-      "Grpc.Net.Client/2.57.0": {
+      "Grpc.Net.Client/2.60.0": {
         "type": "package",
         "dependencies": {
-          "Grpc.Net.Common": "2.57.0",
+          "Grpc.Net.Common": "2.60.0",
           "Microsoft.Extensions.Logging.Abstractions": "6.0.0"
         },
         "compile": {
@@ -179,10 +179,10 @@
           }
         }
       },
-      "Grpc.Net.ClientFactory/2.57.0": {
+      "Grpc.Net.ClientFactory/2.60.0": {
         "type": "package",
         "dependencies": {
-          "Grpc.Net.Client": "2.57.0",
+          "Grpc.Net.Client": "2.60.0",
           "Microsoft.Extensions.Http": "6.0.0"
         },
         "compile": {
@@ -1779,14 +1779,14 @@
         "lib/netstandard2.0/Google.Api.CommonProtos.xml"
       ]
     },
-    "Google.Protobuf/3.24.0": {
-      "sha512": "5j/OBUVWPTeRYlG3Dm4PSupyU6nJmbnnhPeqjePzCqtzrh5vErx8dToStuhTnG1ZYZ+dawGziC7DN1I6FEQH0g==",
+    "Google.Protobuf/3.25.2": {
+      "sha512": "g/xIIeLhR77bl4ajGGbPYRmZf5acJlCRaSBqUnU8+2aQYREnZnv+UccRNndHof4mWO1ORS0b5i6on40VOjBpsg==",
       "type": "package",
-      "path": "google.protobuf/3.24.0",
+      "path": "google.protobuf/3.25.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "google.protobuf.3.24.0.nupkg.sha512",
+        "google.protobuf.3.25.2.nupkg.sha512",
         "google.protobuf.nuspec",
         "lib/net45/Google.Protobuf.dll",
         "lib/net45/Google.Protobuf.pdb",
@@ -1802,15 +1802,15 @@
         "lib/netstandard2.0/Google.Protobuf.xml"
       ]
     },
-    "Grpc.AspNetCore/2.57.0": {
-      "sha512": "mTKo9d5DYOxTFhg/8sdX5O3+gw1uFESmu7WhH04t5PSPltpQ10ZiK+Mr/ju/TW3MwxJg8uHt71fWL6AS443izw==",
+    "Grpc.AspNetCore/2.60.0": {
+      "sha512": "fFLF1/7C+ZZ10vpw63jNRp9VMIXAAmSFKD8pp8rDtD6Z51H4qYYto/go+XhBs7av5piG+GziSP0uA1VZAYLgAA==",
       "type": "package",
-      "path": "grpc.aspnetcore/2.57.0",
+      "path": "grpc.aspnetcore/2.60.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
-        "grpc.aspnetcore.2.57.0.nupkg.sha512",
+        "grpc.aspnetcore.2.60.0.nupkg.sha512",
         "grpc.aspnetcore.nuspec",
         "lib/net6.0/_._",
         "lib/net7.0/_._",
@@ -1840,14 +1840,14 @@
         "packageIcon.png"
       ]
     },
-    "Grpc.AspNetCore.Server.ClientFactory/2.57.0": {
-      "sha512": "Ucl50YKMMRaP/ikx20v6tDGdNaRzeiujmw8kmAFy3/4f8+d1mDY8wn3vcXpIflX4IE+WvZQOTHz5r/3/GutbQw==",
+    "Grpc.AspNetCore.Server.ClientFactory/2.60.0": {
+      "sha512": "QjhyB/vW1RkvdT2ddxvsOzA5gRhiYxGww3VMXlXVBXD2rKrSj9m8Z3BlatdTtiM+W+zsMfgoggxCIIktcxyWkA==",
       "type": "package",
-      "path": "grpc.aspnetcore.server.clientfactory/2.57.0",
+      "path": "grpc.aspnetcore.server.clientfactory/2.60.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "grpc.aspnetcore.server.clientfactory.2.57.0.nupkg.sha512",
+        "grpc.aspnetcore.server.clientfactory.2.60.0.nupkg.sha512",
         "grpc.aspnetcore.server.clientfactory.nuspec",
         "lib/net6.0/Grpc.AspNetCore.Server.ClientFactory.dll",
         "lib/net6.0/Grpc.AspNetCore.Server.ClientFactory.pdb",
@@ -1904,15 +1904,15 @@
         "packageIcon.png"
       ]
     },
-    "Grpc.Net.Client/2.57.0": {
-      "sha512": "vVDW0ePnaH9Na+wjm64vpzdj05JEjOCmAXUlANVc+s3hBBreEizfbmlzWPjsL6ZskaSrA59Ckb0J2l1HMvtMHQ==",
+    "Grpc.Net.Client/2.60.0": {
+      "sha512": "J9U96gjZHOcqSgAThg9vZZhLsbTD005bUggPtMP/RVQnGc3+tQJTpkRUCJtJWq9cykNydsRVoyU38TjPP/VJ4A==",
       "type": "package",
-      "path": "grpc.net.client/2.57.0",
+      "path": "grpc.net.client/2.60.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
-        "grpc.net.client.2.57.0.nupkg.sha512",
+        "grpc.net.client.2.60.0.nupkg.sha512",
         "grpc.net.client.nuspec",
         "lib/net462/Grpc.Net.Client.dll",
         "lib/net462/Grpc.Net.Client.pdb",
@@ -1935,15 +1935,15 @@
         "packageIcon.png"
       ]
     },
-    "Grpc.Net.ClientFactory/2.57.0": {
-      "sha512": "t3+mz7z6e3tezZbekioGOqix4QcOAWRACQqP3v/FA6HxkgraTRceaREPaFTxSFvGrpPtOSkJ3y1WRx0MA+8v9g==",
+    "Grpc.Net.ClientFactory/2.60.0": {
+      "sha512": "lCUZjbv6TtI1FbOUE593PLCkXqW2Yrf3KsFfzxIMdJ54o4ELwCEQ26xjfrm+hMTefiXxvXf9FO7zL1rGLWWSig==",
       "type": "package",
-      "path": "grpc.net.clientfactory/2.57.0",
+      "path": "grpc.net.clientfactory/2.60.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
-        "grpc.net.clientfactory.2.57.0.nupkg.sha512",
+        "grpc.net.clientfactory.2.60.0.nupkg.sha512",
         "grpc.net.clientfactory.nuspec",
         "lib/net6.0/Grpc.Net.ClientFactory.dll",
         "lib/net6.0/Grpc.Net.ClientFactory.pdb",
@@ -4570,7 +4570,8 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "Grpc.AspNetCore >= 2.57.0",
+      "Google.Protobuf >= 3.25.2",
+      "Grpc.AspNetCore >= 2.60.0",
       "Grpc.AspNetCore.Server.Reflection >= 2.60.0",
       "Microsoft.AspNetCore.Grpc.JsonTranscoding >= 8.0.1",
       "Microsoft.entityframeworkcore.design >= 8.0.1",
@@ -4584,11 +4585,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Eng Cocu\\source\\repos\\gRPC.TaskManagement\\gRPC.TaskManagement.Presentation\\gRPC.TaskManagement.Presentation.csproj",
+      "projectUniqueName": "C:\\Users\\Eng Cocu\\Desktop\\New folder\\gRPC.TaskManagement\\gRPC.TaskManagement.Presentation\\gRPC.TaskManagement.Presentation.csproj",
       "projectName": "gRPC.TaskManagement.Presentation",
-      "projectPath": "C:\\Users\\Eng Cocu\\source\\repos\\gRPC.TaskManagement\\gRPC.TaskManagement.Presentation\\gRPC.TaskManagement.Presentation.csproj",
+      "projectPath": "C:\\Users\\Eng Cocu\\Desktop\\New folder\\gRPC.TaskManagement\\gRPC.TaskManagement.Presentation\\gRPC.TaskManagement.Presentation.csproj",
       "packagesPath": "C:\\Users\\Eng Cocu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Eng Cocu\\source\\repos\\gRPC.TaskManagement\\gRPC.TaskManagement.Presentation\\obj\\",
+      "outputPath": "C:\\Users\\Eng Cocu\\Desktop\\New folder\\gRPC.TaskManagement\\gRPC.TaskManagement.Presentation\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Eng Cocu\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4605,8 +4606,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Eng Cocu\\source\\repos\\gRPC.TaskManagement\\gRPC.TaskManagement.BL\\gRPC.TaskManagement.BL.csproj": {
-              "projectPath": "C:\\Users\\Eng Cocu\\source\\repos\\gRPC.TaskManagement\\gRPC.TaskManagement.BL\\gRPC.TaskManagement.BL.csproj"
+            "C:\\Users\\Eng Cocu\\Desktop\\New folder\\gRPC.TaskManagement\\gRPC.TaskManagement.BL\\gRPC.TaskManagement.BL.csproj": {
+              "projectPath": "C:\\Users\\Eng Cocu\\Desktop\\New folder\\gRPC.TaskManagement\\gRPC.TaskManagement.BL\\gRPC.TaskManagement.BL.csproj"
             }
           }
         }
@@ -4621,9 +4622,13 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "Google.Protobuf": {
+            "target": "Package",
+            "version": "[3.25.2, )"
+          },
           "Grpc.AspNetCore": {
             "target": "Package",
-            "version": "[2.57.0, )"
+            "version": "[2.60.0, )"
           },
           "Grpc.AspNetCore.Server.Reflection": {
             "target": "Package",

@@ -11,6 +11,14 @@ public class TaskItem
     public Status Status { get; set; } = status;
     public Priority Priority { get; set; } = priority;
 
+    public int CategoryId { get; set; }
+    public Category? Category { get; set; }
+
+    public int ProjectId { get; set; }
+    public Project? Project { get; set; }
+
+    public ICollection<Comment> Comments { get; set; } = [];
+
     public override bool Equals(object? obj) => obj is TaskItem item &&
         base.Equals(item) &&
         Name == item.Name &&

@@ -5,6 +5,9 @@ public class Comment(string text)
 {
     public string Text { get; set; } = text;
 
+    public int TaskItemId { get; set; }
+    public TaskItem? TaskItem { get; set; }
+
     public override bool Equals(object? obj) =>
         obj is Comment comment &&
         base.Equals(comment) &&

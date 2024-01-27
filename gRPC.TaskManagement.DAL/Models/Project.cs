@@ -9,6 +9,8 @@ public class Project
     public DateTime StartDate { get; set; } = startDate;
     public DateTime EndDate { get; set; } = endDate;
 
+    public ICollection<TaskItem> Tasks { get; set; } = [];
+
     public override bool Equals(object? obj) =>
         obj is Project project &&
         base.Equals(obj) &&

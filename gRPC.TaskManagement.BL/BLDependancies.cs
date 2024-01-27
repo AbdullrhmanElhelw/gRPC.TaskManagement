@@ -9,6 +9,7 @@ public static class BLDependancies
     public static IServiceCollection AddBLDependeces(this IServiceCollection services)
     {
         services.AddScoped<ICategoryManager, CategoryManager>();
+        services.AddScoped<IProjectManager, ProjectManager>();
         return services;
     }
 }

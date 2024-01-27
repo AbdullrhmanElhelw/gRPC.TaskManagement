@@ -19,5 +19,10 @@ internal class CategoryConfiguration : IEntityTypeConfiguration<Category>
         builder.Property(x => x.Description)
             .HasMaxLength(255)
             .IsRequired(false);
+
+        builder.HasMany(x => x.Tasks)
+            .WithOne(x => x.Category)
+            .HasForeignKey(x => x.CategoryId)
+            .HasConstraintName("Fk_Category_Tasks");
     }
 }

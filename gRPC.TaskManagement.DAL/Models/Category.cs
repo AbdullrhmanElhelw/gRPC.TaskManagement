@@ -10,6 +10,8 @@ public class Category
     public string Description { get; set; } = description;
     public TaskColor Color { get; set; } = color;
 
+    public ICollection<TaskItem> Tasks { get; set; } = [];
+
     public override bool Equals(object? obj) => obj is Category category &&
         base.Equals(category) &&
         Name == category.Name &&
