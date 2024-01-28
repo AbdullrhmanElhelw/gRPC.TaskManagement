@@ -34,6 +34,12 @@ public class ProjectManager
         await _unitOfWork.Commit();
     }
 
+    public async Task<IQueryable<ReadProjectDTO>> FindProjectByName(string name)
+    {
+        var projects = await _repository.FindAsync(x => x.Name.Contains(name));
+        return projects.ToReadProjectDTO();
+    }
+
     public async Task<IQueryable<ReadProjectDTO>> GetAll()
     {
         var projects = await _repository.GetAllAsync();
@@ -47,5 +53,20 @@ public class ProjectManager
             throw new NullReferenceException(nameof(project));
 
         return project;
+    }
+
+    public async Task UpdateProject(int id, UpdateProjectDTO projectDTO)
+    {
+        var projectIsExist = await _repository.GetAsync(id);
+        if (projectIsExist is null)
+            throw new NullReferenceException(nameof(projectIsExist));
+
+        projectIsExist.Name = projectDTO.Name;
+        projectIsExist.Description = projectDTO.Description;
+        projectIsExist.StartDate = projectDTO.StartDate;
+        projectIsExist.EndDate = projectDTO.EndDate;
+
+        await _repository.UpdateAsync(projectIsExist);
+        await _unitOfWork.Commit();
     }
 }

@@ -10,6 +10,7 @@ service ProjectItemService{
     rpc GetallProjects(GetallProjectsRequest) returns(stream GetProjectResponse);
     rpc UpdateProject(UpdateProjectRequest) returns (UpdateProjectResponse);
     rpc DeleteProject(DeleteProjectRequest) returns (DeleteProjectResponse);
+    rpc FindProjectByName(FindProjectByNameRequest) returns (stream FindProjectByNameResponse);
 }
 
 message CreateProjectRequest{
@@ -64,5 +65,19 @@ message DeleteProjectRequest{
 message DeleteProjectResponse{
     int32 status = 1;
 }
+
+
+message FindProjectByNameRequest{
+	string name = 1;
+}
+
+message FindProjectByNameResponse{
+	int32 id =1;
+	string name = 2;
+	string description = 3;
+	google.protobuf.Timestamp start_date = 4;
+	google.protobuf.Timestamp end_date = 5;
+}
+
 
 

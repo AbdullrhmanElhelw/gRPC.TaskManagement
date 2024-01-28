@@ -43,6 +43,12 @@ public class CategoryManager
         return categories.ToCategoryReadDTO();
     }
 
+    public async Task<IQueryable<CategoryReadDTO>> GetAllWithPaging(int page, int limit)
+    {
+        var categories = await _repository.GetAllWithPaging(page, limit);
+        return categories.ToCategoryReadDTO();
+    }
+
     public async Task<CategoryReadDTO> GetCategory(int id)
     {
         return await _repository.GetAsync(id);
@@ -52,7 +58,10 @@ public class CategoryManager
     {
         var findEntity = await _repository.GetAsync(id);
 
-        findEntity!.Name = updateDTO.Name;
+        if (findEntity is null)
+            throw new NullReferenceException(nameof(findEntity));
+
+        findEntity.Name = updateDTO.Name;
         findEntity.Description = updateDTO.Description;
 
         await _repository.UpdateAsync(findEntity);

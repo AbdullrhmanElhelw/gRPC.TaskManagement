@@ -27,7 +27,7 @@ public class BaseRepository<TModel>(TaskManagementDbContext context)
 
     public async Task<IQueryable<TModel>> GetAllAsync()
     {
-        return await Task.FromResult(_context.Set<TModel>().AsQueryable());
+        return await Task.FromResult(_context.Set<TModel>().AsNoTracking());
     }
 
     public Task UpdateAsync(TModel entity)
@@ -40,5 +40,15 @@ public class BaseRepository<TModel>(TaskManagementDbContext context)
     {
         var result = await _context.Set<TModel>().Where(filter).AsNoTracking().ToListAsync();
         return result.AsQueryable();
+    }
+
+    public Task<IQueryable<TModel>> GetAllWithPaging(int page, int limit)
+    {
+        var result = _context.Set<TModel>()
+             .Skip((page - 1) * limit)
+             .Take(limit)
+             .AsNoTracking();
+
+        return Task.FromResult(result);
     }
 }

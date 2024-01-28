@@ -9,6 +9,7 @@ service CategoryItem{
 	rpc DeleteCategory(DeleteCategoryRequest) returns (DeleteCategoryResponse);
 	rpc UpdateCategory(UpdateCategoryRequest) returns (UpdateCategoryResponse);
 	rpc FindCategoryByName(FindCategoryByNameRequest) returns (stream GetAllCategoriesResponse);
+	rpc GetAllCategoriesPaging(GetAllCategoriesPagingRequest) returns (stream GetAllCategoriesResponse);
 }
 
 
@@ -74,4 +75,16 @@ message FindCategoryByNameRequest{
 	string name = 1;
 }
 
+
+message GetAllCategoriesPagingRequest{
+	int32 page = 1;
+	int32 limit = 2;
+}
+
+message GetAllCategoriesPagingResponse{
+	int32 id = 1;
+	string name = 2;
+	string description = 3;
+	string color = 4;
+}
 

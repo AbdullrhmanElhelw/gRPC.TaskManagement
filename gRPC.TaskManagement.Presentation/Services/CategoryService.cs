@@ -101,4 +101,20 @@ public class CategoryService(ICategoryManager categoryManager)
             });
         }
     }
+
+    public override async Task GetAllCategoriesPaging(GetAllCategoriesPagingRequest request, IServerStreamWriter<GetAllCategoriesResponse> responseStream, ServerCallContext context)
+    {
+        var categories = await _categoryManager.GetAllWithPaging(request.Page, request.Limit);
+
+        foreach (var category in categories)
+        {
+            await responseStream.WriteAsync(new GetAllCategoriesResponse
+            {
+                Id = category.Id,
+                Name = category.Name,
+                Description = category.Description,
+                Color = category.Color.ToString()
+            });
+        }
+    }
 }

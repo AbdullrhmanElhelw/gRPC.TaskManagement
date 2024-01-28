@@ -1,4 +1,5 @@
-﻿using gRPC.TaskManagement.BL.DTOs.ProjectDTOs;
+﻿using Google.Protobuf.WellKnownTypes;
+using gRPC.TaskManagement.BL.DTOs.ProjectDTOs;
 using gRPC.TaskManagement.BL.Managers.Abstracts;
 using Grpc.Core;
 
@@ -45,5 +46,44 @@ public class ProjectService(IProjectManager projectManager)
                 Description = project.Description
             });
         }
+    }
+
+    public override async Task FindProjectByName(FindProjectByNameRequest request, IServerStreamWriter<FindProjectByNameResponse> responseStream, ServerCallContext context)
+    {
+        var projects = await _projectManager.FindProjectByName(request.Name);
+
+        foreach (var project in projects)
+        {
+            await responseStream.WriteAsync(new FindProjectByNameResponse
+            {
+                Id = project.Id,
+                Name = project.Name,
+                Description = project.Description
+            });
+        }
+    }
+
+    public override async Task<UpdateProjectResponse> UpdateProject(UpdateProjectRequest request, ServerCallContext context)
+    {
+        var projectToUpdate = new UpdateProjectDTO
+           (request.Name, request.Description, request.StartDate.ToDateTime(), request.EndDate.ToDateTime());
+
+        await _projectManager.UpdateProject(request.Id, projectToUpdate);
+        return new UpdateProjectResponse
+        {
+            Name = projectToUpdate.Name,
+            Description = projectToUpdate.Description,
+            StartDate = projectToUpdate.StartDate.ToTimestamp(),
+            EndDate = projectToUpdate.EndDate.ToTimestamp()
+        };
+    }
+
+    public override async Task<DeleteProjectResponse> DeleteProject(DeleteProjectRequest request, ServerCallContext context)
+    {
+        await _projectManager.DeleteProject(request.Id);
+        return new DeleteProjectResponse
+        {
+            Status = 200
+        };
     }
 }

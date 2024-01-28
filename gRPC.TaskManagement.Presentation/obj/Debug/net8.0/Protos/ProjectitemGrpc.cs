@@ -63,6 +63,10 @@ namespace gRPC.TaskManagement.Presentation {
     static readonly grpc::Marshaller<global::gRPC.TaskManagement.Presentation.DeleteProjectRequest> __Marshaller_DeleteProjectRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::gRPC.TaskManagement.Presentation.DeleteProjectRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::gRPC.TaskManagement.Presentation.DeleteProjectResponse> __Marshaller_DeleteProjectResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::gRPC.TaskManagement.Presentation.DeleteProjectResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::gRPC.TaskManagement.Presentation.FindProjectByNameRequest> __Marshaller_FindProjectByNameRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::gRPC.TaskManagement.Presentation.FindProjectByNameRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::gRPC.TaskManagement.Presentation.FindProjectByNameResponse> __Marshaller_FindProjectByNameResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::gRPC.TaskManagement.Presentation.FindProjectByNameResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::gRPC.TaskManagement.Presentation.CreateProjectRequest, global::gRPC.TaskManagement.Presentation.CreateProjectResponse> __Method_CreateProject = new grpc::Method<global::gRPC.TaskManagement.Presentation.CreateProjectRequest, global::gRPC.TaskManagement.Presentation.CreateProjectResponse>(
@@ -104,6 +108,14 @@ namespace gRPC.TaskManagement.Presentation {
         __Marshaller_DeleteProjectRequest,
         __Marshaller_DeleteProjectResponse);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::gRPC.TaskManagement.Presentation.FindProjectByNameRequest, global::gRPC.TaskManagement.Presentation.FindProjectByNameResponse> __Method_FindProjectByName = new grpc::Method<global::gRPC.TaskManagement.Presentation.FindProjectByNameRequest, global::gRPC.TaskManagement.Presentation.FindProjectByNameResponse>(
+        grpc::MethodType.ServerStreaming,
+        __ServiceName,
+        "FindProjectByName",
+        __Marshaller_FindProjectByNameRequest,
+        __Marshaller_FindProjectByNameResponse);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -144,6 +156,12 @@ namespace gRPC.TaskManagement.Presentation {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task FindProjectByName(global::gRPC.TaskManagement.Presentation.FindProjectByNameRequest request, grpc::IServerStreamWriter<global::gRPC.TaskManagement.Presentation.FindProjectByNameResponse> responseStream, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
     }
 
     /// <summary>Creates service definition that can be registered with a server</summary>
@@ -156,7 +174,8 @@ namespace gRPC.TaskManagement.Presentation {
           .AddMethod(__Method_GetProject, serviceImpl.GetProject)
           .AddMethod(__Method_GetallProjects, serviceImpl.GetallProjects)
           .AddMethod(__Method_UpdateProject, serviceImpl.UpdateProject)
-          .AddMethod(__Method_DeleteProject, serviceImpl.DeleteProject).Build();
+          .AddMethod(__Method_DeleteProject, serviceImpl.DeleteProject)
+          .AddMethod(__Method_FindProjectByName, serviceImpl.FindProjectByName).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -171,6 +190,7 @@ namespace gRPC.TaskManagement.Presentation {
       serviceBinder.AddMethod(__Method_GetallProjects, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::gRPC.TaskManagement.Presentation.GetallProjectsRequest, global::gRPC.TaskManagement.Presentation.GetProjectResponse>(serviceImpl.GetallProjects));
       serviceBinder.AddMethod(__Method_UpdateProject, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::gRPC.TaskManagement.Presentation.UpdateProjectRequest, global::gRPC.TaskManagement.Presentation.UpdateProjectResponse>(serviceImpl.UpdateProject));
       serviceBinder.AddMethod(__Method_DeleteProject, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::gRPC.TaskManagement.Presentation.DeleteProjectRequest, global::gRPC.TaskManagement.Presentation.DeleteProjectResponse>(serviceImpl.DeleteProject));
+      serviceBinder.AddMethod(__Method_FindProjectByName, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::gRPC.TaskManagement.Presentation.FindProjectByNameRequest, global::gRPC.TaskManagement.Presentation.FindProjectByNameResponse>(serviceImpl.FindProjectByName));
     }
 
   }

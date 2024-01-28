@@ -15,4 +15,6 @@ public interface IBaseRepository<T> where T : class
     Task<IQueryable<T>> GetAllAsync();
 
     Task<IQueryable<T>> FindAsync(Expression<Func<T, bool>> filter);
+
+    Task<IQueryable<T>> GetAllWithPaging(int page, int limit);
 }

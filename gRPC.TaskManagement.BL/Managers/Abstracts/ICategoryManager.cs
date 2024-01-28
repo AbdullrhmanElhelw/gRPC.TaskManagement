@@ -12,6 +12,8 @@ public interface ICategoryManager
 
     Task<IQueryable<CategoryReadDTO>> FindByName(string name);
 
+    Task<IQueryable<CategoryReadDTO>> GetAllWithPaging(int page, int limit);
+
     Task DeleteAsync(int id);
 
     Task UpdateAsync(int id, CategoryUpdateDTO updateDTO);

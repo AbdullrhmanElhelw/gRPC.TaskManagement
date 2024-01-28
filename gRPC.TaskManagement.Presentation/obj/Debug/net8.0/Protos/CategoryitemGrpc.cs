@@ -67,6 +67,8 @@ namespace gRPC.TaskManagement.Presentation {
     static readonly grpc::Marshaller<global::gRPC.TaskManagement.Presentation.UpdateCategoryResponse> __Marshaller_UpdateCategoryResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::gRPC.TaskManagement.Presentation.UpdateCategoryResponse.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::gRPC.TaskManagement.Presentation.FindCategoryByNameRequest> __Marshaller_FindCategoryByNameRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::gRPC.TaskManagement.Presentation.FindCategoryByNameRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::gRPC.TaskManagement.Presentation.GetAllCategoriesPagingRequest> __Marshaller_GetAllCategoriesPagingRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::gRPC.TaskManagement.Presentation.GetAllCategoriesPagingRequest.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::gRPC.TaskManagement.Presentation.GetCategoryRequest, global::gRPC.TaskManagement.Presentation.GetCategoryResponse> __Method_GetCategory = new grpc::Method<global::gRPC.TaskManagement.Presentation.GetCategoryRequest, global::gRPC.TaskManagement.Presentation.GetCategoryResponse>(
@@ -116,6 +118,14 @@ namespace gRPC.TaskManagement.Presentation {
         __Marshaller_FindCategoryByNameRequest,
         __Marshaller_GetAllCategoriesResponse);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::gRPC.TaskManagement.Presentation.GetAllCategoriesPagingRequest, global::gRPC.TaskManagement.Presentation.GetAllCategoriesResponse> __Method_GetAllCategoriesPaging = new grpc::Method<global::gRPC.TaskManagement.Presentation.GetAllCategoriesPagingRequest, global::gRPC.TaskManagement.Presentation.GetAllCategoriesResponse>(
+        grpc::MethodType.ServerStreaming,
+        __ServiceName,
+        "GetAllCategoriesPaging",
+        __Marshaller_GetAllCategoriesPagingRequest,
+        __Marshaller_GetAllCategoriesResponse);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -162,6 +172,12 @@ namespace gRPC.TaskManagement.Presentation {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task GetAllCategoriesPaging(global::gRPC.TaskManagement.Presentation.GetAllCategoriesPagingRequest request, grpc::IServerStreamWriter<global::gRPC.TaskManagement.Presentation.GetAllCategoriesResponse> responseStream, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
     }
 
     /// <summary>Creates service definition that can be registered with a server</summary>
@@ -175,7 +191,8 @@ namespace gRPC.TaskManagement.Presentation {
           .AddMethod(__Method_GetAllCategories, serviceImpl.GetAllCategories)
           .AddMethod(__Method_DeleteCategory, serviceImpl.DeleteCategory)
           .AddMethod(__Method_UpdateCategory, serviceImpl.UpdateCategory)
-          .AddMethod(__Method_FindCategoryByName, serviceImpl.FindCategoryByName).Build();
+          .AddMethod(__Method_FindCategoryByName, serviceImpl.FindCategoryByName)
+          .AddMethod(__Method_GetAllCategoriesPaging, serviceImpl.GetAllCategoriesPaging).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -191,6 +208,7 @@ namespace gRPC.TaskManagement.Presentation {
       serviceBinder.AddMethod(__Method_DeleteCategory, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::gRPC.TaskManagement.Presentation.DeleteCategoryRequest, global::gRPC.TaskManagement.Presentation.DeleteCategoryResponse>(serviceImpl.DeleteCategory));
       serviceBinder.AddMethod(__Method_UpdateCategory, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::gRPC.TaskManagement.Presentation.UpdateCategoryRequest, global::gRPC.TaskManagement.Presentation.UpdateCategoryResponse>(serviceImpl.UpdateCategory));
       serviceBinder.AddMethod(__Method_FindCategoryByName, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::gRPC.TaskManagement.Presentation.FindCategoryByNameRequest, global::gRPC.TaskManagement.Presentation.GetAllCategoriesResponse>(serviceImpl.FindCategoryByName));
+      serviceBinder.AddMethod(__Method_GetAllCategoriesPaging, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::gRPC.TaskManagement.Presentation.GetAllCategoriesPagingRequest, global::gRPC.TaskManagement.Presentation.GetAllCategoriesResponse>(serviceImpl.GetAllCategoriesPaging));
     }
 
   }

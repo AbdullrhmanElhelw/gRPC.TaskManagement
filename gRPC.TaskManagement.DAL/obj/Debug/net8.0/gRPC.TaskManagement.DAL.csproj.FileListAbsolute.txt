@@ -12,16 +12,16 @@ C:\Users\Eng Cocu\source\repos\gRPC.TaskManagement\gRPC.TaskManagement.DAL\obj\D
 C:\Users\Eng Cocu\source\repos\gRPC.TaskManagement\gRPC.TaskManagement.DAL\obj\Debug\net8.0\gRPC.TaskManagement.DAL.pdb
 C:\Users\Eng Cocu\source\repos\gRPC.TaskManagement\gRPC.TaskManagement.DAL\obj\Debug\net8.0\gRPC.TaskManagement.DAL.genruntimeconfig.cache
 C:\Users\Eng Cocu\source\repos\gRPC.TaskManagement\gRPC.TaskManagement.DAL\obj\Debug\net8.0\ref\gRPC.TaskManagement.DAL.dll
+C:\Users\Eng Cocu\Desktop\New folder\gRPC.TaskManagement\gRPC.TaskManagement.DAL\bin\Debug\net8.0\gRPC.TaskManagement.DAL.deps.json
+C:\Users\Eng Cocu\Desktop\New folder\gRPC.TaskManagement\gRPC.TaskManagement.DAL\bin\Debug\net8.0\gRPC.TaskManagement.DAL.runtimeconfig.json
+C:\Users\Eng Cocu\Desktop\New folder\gRPC.TaskManagement\gRPC.TaskManagement.DAL\bin\Debug\net8.0\gRPC.TaskManagement.DAL.dll
+C:\Users\Eng Cocu\Desktop\New folder\gRPC.TaskManagement\gRPC.TaskManagement.DAL\bin\Debug\net8.0\gRPC.TaskManagement.DAL.pdb
 C:\Users\Eng Cocu\Desktop\New folder\gRPC.TaskManagement\gRPC.TaskManagement.DAL\obj\Debug\net8.0\gRPC.TaskManagement.DAL.csproj.AssemblyReference.cache
 C:\Users\Eng Cocu\Desktop\New folder\gRPC.TaskManagement\gRPC.TaskManagement.DAL\obj\Debug\net8.0\gRPC.TaskManagement.DAL.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Eng Cocu\Desktop\New folder\gRPC.TaskManagement\gRPC.TaskManagement.DAL\obj\Debug\net8.0\gRPC.TaskManagement.DAL.AssemblyInfoInputs.cache
 C:\Users\Eng Cocu\Desktop\New folder\gRPC.TaskManagement\gRPC.TaskManagement.DAL\obj\Debug\net8.0\gRPC.TaskManagement.DAL.AssemblyInfo.cs
 C:\Users\Eng Cocu\Desktop\New folder\gRPC.TaskManagement\gRPC.TaskManagement.DAL\obj\Debug\net8.0\gRPC.TaskManagement.DAL.csproj.CoreCompileInputs.cache
 C:\Users\Eng Cocu\Desktop\New folder\gRPC.TaskManagement\gRPC.TaskManagement.DAL\obj\Debug\net8.0\gRPC.TaskManagement.DAL.sourcelink.json
-C:\Users\Eng Cocu\Desktop\New folder\gRPC.TaskManagement\gRPC.TaskManagement.DAL\bin\Debug\net8.0\gRPC.TaskManagement.DAL.deps.json
-C:\Users\Eng Cocu\Desktop\New folder\gRPC.TaskManagement\gRPC.TaskManagement.DAL\bin\Debug\net8.0\gRPC.TaskManagement.DAL.runtimeconfig.json
-C:\Users\Eng Cocu\Desktop\New folder\gRPC.TaskManagement\gRPC.TaskManagement.DAL\bin\Debug\net8.0\gRPC.TaskManagement.DAL.dll
-C:\Users\Eng Cocu\Desktop\New folder\gRPC.TaskManagement\gRPC.TaskManagement.DAL\bin\Debug\net8.0\gRPC.TaskManagement.DAL.pdb
 C:\Users\Eng Cocu\Desktop\New folder\gRPC.TaskManagement\gRPC.TaskManagement.DAL\obj\Debug\net8.0\gRPC.TaskManagement.DAL.dll
 C:\Users\Eng Cocu\Desktop\New folder\gRPC.TaskManagement\gRPC.TaskManagement.DAL\obj\Debug\net8.0\refint\gRPC.TaskManagement.DAL.dll
 C:\Users\Eng Cocu\Desktop\New folder\gRPC.TaskManagement\gRPC.TaskManagement.DAL\obj\Debug\net8.0\gRPC.TaskManagement.DAL.pdb

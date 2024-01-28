@@ -145,8 +145,6 @@ C:\Users\Eng Cocu\source\repos\gRPC.TaskManagement\gRPC.TaskManagement.Presentat
 C:\Users\Eng Cocu\source\repos\gRPC.TaskManagement\gRPC.TaskManagement.Presentation\obj\Debug\net8.0\gRPC.TaskManagement.Presentation.genruntimeconfig.cache
 C:\Users\Eng Cocu\source\repos\gRPC.TaskManagement\gRPC.TaskManagement.Presentation\obj\Debug\net8.0\ref\gRPC.TaskManagement.Presentation.dll
 C:\Users\Eng Cocu\source\repos\gRPC.TaskManagement\gRPC.TaskManagement.Presentation\obj\Debug\net8.0\gRPC.TaskManagement.Presentation.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Eng Cocu\Desktop\New folder\gRPC.TaskManagement\gRPC.TaskManagement.Presentation\obj\Debug\net8.0\gRPC.TaskManagement.Presentation.csproj.AssemblyReference.cache
-C:\Users\Eng Cocu\Desktop\New folder\gRPC.TaskManagement\gRPC.TaskManagement.Presentation\obj\Debug\net8.0\gRPC.TaskManagement.Presentation.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Eng Cocu\Desktop\New folder\gRPC.TaskManagement\gRPC.TaskManagement.Presentation\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\Eng Cocu\Desktop\New folder\gRPC.TaskManagement\gRPC.TaskManagement.Presentation\bin\Debug\net8.0\appsettings.json
 C:\Users\Eng Cocu\Desktop\New folder\gRPC.TaskManagement\gRPC.TaskManagement.Presentation\bin\Debug\net8.0\gRPC.TaskManagement.Presentation.exe
@@ -273,6 +271,8 @@ C:\Users\Eng Cocu\Desktop\New folder\gRPC.TaskManagement\gRPC.TaskManagement.Pre
 C:\Users\Eng Cocu\Desktop\New folder\gRPC.TaskManagement\gRPC.TaskManagement.Presentation\bin\Debug\net8.0\gRPC.TaskManagement.DAL.dll
 C:\Users\Eng Cocu\Desktop\New folder\gRPC.TaskManagement\gRPC.TaskManagement.Presentation\bin\Debug\net8.0\gRPC.TaskManagement.BL.pdb
 C:\Users\Eng Cocu\Desktop\New folder\gRPC.TaskManagement\gRPC.TaskManagement.Presentation\bin\Debug\net8.0\gRPC.TaskManagement.DAL.pdb
+C:\Users\Eng Cocu\Desktop\New folder\gRPC.TaskManagement\gRPC.TaskManagement.Presentation\obj\Debug\net8.0\gRPC.TaskManagement.Presentation.csproj.AssemblyReference.cache
+C:\Users\Eng Cocu\Desktop\New folder\gRPC.TaskManagement\gRPC.TaskManagement.Presentation\obj\Debug\net8.0\gRPC.TaskManagement.Presentation.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Eng Cocu\Desktop\New folder\gRPC.TaskManagement\gRPC.TaskManagement.Presentation\obj\Debug\net8.0\gRPC.TaskManagement.Presentation.AssemblyInfoInputs.cache
 C:\Users\Eng Cocu\Desktop\New folder\gRPC.TaskManagement\gRPC.TaskManagement.Presentation\obj\Debug\net8.0\gRPC.TaskManagement.Presentation.AssemblyInfo.cs
 C:\Users\Eng Cocu\Desktop\New folder\gRPC.TaskManagement\gRPC.TaskManagement.Presentation\obj\Debug\net8.0\gRPC.TaskManagement.Presentation.csproj.CoreCompileInputs.cache

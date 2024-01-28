@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("gRPC.TaskManagement.BL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dbc2ab64918a7753182d27b8c9b1102c5fca7e41")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f2ede19ea4c33771e091c5705a1180dd1f0b02cd")]
 [assembly: System.Reflection.AssemblyProductAttribute("gRPC.TaskManagement.BL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("gRPC.TaskManagement.BL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

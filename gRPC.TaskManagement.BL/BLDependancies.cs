@@ -10,6 +10,7 @@ public static class BLDependancies
     {
         services.AddScoped<ICategoryManager, CategoryManager>();
         services.AddScoped<IProjectManager, ProjectManager>();
+        services.AddScoped<ITaskManager, TaskManager>();
         return services;
     }
 }
